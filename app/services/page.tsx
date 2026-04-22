@@ -138,23 +138,23 @@ export default function ServicesPage() {
         {/* Benefits Section */}
         <section className="py-12 sm:py-16 lg:py-20 bg-secondary/50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-bold">Service Benefits</h2>
-              <p className="text-lg text-muted-foreground text-balance">
+            <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 space-y-3 sm:space-y-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Service Benefits</h2>
+              <p className="text-base sm:text-lg text-muted-foreground text-balance">
                 What you gain from partnering with Synergy 5M
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {benefits.map((benefit, index) => {
                 const Icon = benefit.icon;
                 return (
-                  <div key={index} className="bg-background rounded-lg p-6 border border-border hover:shadow-lg transition-shadow">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <div key={index} className="bg-background rounded-lg p-5 sm:p-6 border border-border hover:shadow-lg transition-shadow">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 flex-shrink-0">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
-                    <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                    <h3 className="font-bold text-base sm:text-lg mb-2">{benefit.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{benefit.description}</p>
                   </div>
                 );
               })}

@@ -37,6 +37,9 @@ export function Footer() {
               <Link href="/services" className="text-sm hover:opacity-80 transition-opacity">
                 Services
               </Link>
+              <Link href="/erp" className="text-sm hover:opacity-80 transition-opacity">
+                ERP Solution
+              </Link>
               <Link href="/technologies" className="text-sm hover:opacity-80 transition-opacity">
                 Technologies
               </Link>
@@ -72,8 +75,11 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="font-semibold">Contact</h3>
             <div className="flex flex-col gap-2">
-              <a href="mailto:ceo@synergy5m.com" className="text-sm hover:opacity-80 transition-opacity">
-                ceo@synergy5m.com
+              <a href="mailto:info@synergy5m.com" className="text-sm hover:opacity-80 transition-opacity">
+                info@synergy5m.com
+              </a>
+              <a href="tel:+919423579446" className="text-sm hover:opacity-80 transition-opacity">
+                +91 9423579446
               </a>
               <a
                 href="https://maps.app.goo.gl/eJxBstuCEfvShpAp7?g_st=aw"
@@ -81,7 +87,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-sm hover:opacity-80 transition-opacity"
               >
-                Visit Our Location
+                Pune, India
               </a>
             </div>
           </div>

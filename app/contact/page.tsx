@@ -50,7 +50,7 @@ export default function ContactPage() {
       );
       
       // Open default email client
-      window.location.href = `mailto:ceo@synergy5m.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:info@synergy5m.com?subject=${subject}&body=${body}`;
       
       // Show success message
       setSubmitted(true);
@@ -82,42 +82,48 @@ export default function ContactPage() {
         {/* Contact Information & Form */}
         <section className="py-12 sm:py-16 lg:py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12">
               {/* Contact Info Cards */}
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 sm:p-8 text-center hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Email</h3>
                 <a
-                  href="mailto:ceo@synergy5m.com"
-                  className="text-primary hover:underline font-semibold"
+                  href="mailto:info@synergy5m.com"
+                  className="text-primary hover:underline font-semibold text-sm sm:text-base break-all sm:break-normal"
                 >
-                  ceo@synergy5m.com
+                  info@synergy5m.com
                 </a>
                 <p className="text-sm text-muted-foreground mt-2">
                   We&apos;ll respond within 24 hours
                 </p>
               </div>
 
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 sm:p-8 text-center hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Phone</h3>
-                <p className="text-muted-foreground font-semibold">
-                  Available for consultations
-                </p>
+                <a
+                  href="tel:+919423579446"
+                  className="text-primary hover:underline font-semibold text-sm sm:text-base"
+                >
+                  +91 9423579446
+                </a>
                 <p className="text-sm text-muted-foreground mt-2">
-                  Schedule a call via our contact form
+                  Available for consultations
                 </p>
               </div>
 
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 sm:p-8 text-center hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Location</h3>
+                <p className="text-sm font-semibold mb-2">
+                  Pimple Saudagar, Pune
+                </p>
                 <a
                   href="https://maps.app.goo.gl/eJxBstuCEfvShpAp7?g_st=aw"
                   target="_blank"
@@ -126,15 +132,12 @@ export default function ContactPage() {
                 >
                   View on Google Maps
                 </a>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Visit our office location
-                </p>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="max-w-2xl mx-auto">
-              <div className="bg-secondary/50 rounded-xl p-8 border border-border">
+            <div className="max-w-2xl mx-auto px-0">
+              <div className="bg-secondary/50 rounded-xl p-6 sm:p-8 border border-border">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-2">Send us a Message</h2>
                 <p className="text-muted-foreground mb-8">
                   Fill out the form below and we&apos;ll get back to you as soon as possible.
@@ -257,7 +260,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="rounded-xl overflow-hidden shadow-lg border border-border h-96">
+            <div className="rounded-xl overflow-hidden shadow-lg border border-border h-64 sm:h-80 lg:h-96">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.2411223849726!2d77.19050097353663!3d28.627088675820697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd288b37c8bf%3A0x6e1d4f13d5f1d5f1!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v1234567890123"
                 width="100%"
